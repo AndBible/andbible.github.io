@@ -505,6 +505,18 @@ header h2 {
   width: 100%;
 }
 
+iframe.youtube {
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+div.youtube {
+  position:relative;
+  padding-top:56.25%;
+}
 aside#sidebar {
   float: right;
   width: 200px;
