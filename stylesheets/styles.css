@@ -116,7 +116,7 @@ blockquote {
 }
 
 dl, dt, dd, dl p {
-	font-color: #444;
+	color: #444;
 }
 
 dl dt {
