@@ -780,6 +780,7 @@ footer a:hover {
 }
 .socialbtns li {
   padding: 5px;
+  display: inline;
 }
 .socialbtns li:hover {
   color: #000000;
