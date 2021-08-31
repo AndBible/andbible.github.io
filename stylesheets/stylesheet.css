@@ -569,6 +569,12 @@ div.youtube {
   position:relative;
   padding-top:56.25%;
 }
+@media only screen and (max-width: 850px) {
+  aside {
+    display: none;
+  }
+
+}
 aside#sidebar {
   float: right;
   width: 200px;
@@ -589,14 +595,17 @@ aside#sidebar p.repo-owner a {
 }
 
 a.button {
-  width: 134px;
+  width: 274px;
   height: 58px;
   padding-top: 22px;
   padding-left: 68px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  padding-bottom: 22px;
+  padding-right: 68px;
+  font-family: 'Besley', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 23px;
   line-height: 1.2;
-  color: #fff;
+  color: #2268b2;
+  margin: 25px;
 }
 a.button small {
   display: block;
@@ -609,12 +618,28 @@ header a.button {
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
 aside a.button {
-  display: block;
-  width: 138px;
-  padding-left: 64px;
+  display: inline-block;
+  width: 188px;
+  padding-left: 10px;
+  padding-bottom: 40px;
   margin-bottom: 20px;
-  font-size: 21px;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+  font-size: 11px;
+  color: black;
+  background-color:  #ee9724 ;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2.5px 5px #888888;
+}
+#dwnld {
+  background-color:  #53d60a;
+}
+.sidebarIcons {
+  display: inline;
+  position: relative;
+  bottom:8px;
+  padding-right: 10px;
+  float: left;
+  height: 35px;
+  width: 45px;
 }
 
 code, pre {
@@ -690,7 +715,7 @@ form {
   font-size: 2.8em;
   font-weight: normal;
   color: #474747;
-  text-indent: 6px;
+  text-indent: 0px;
   letter-spacing: -1px;
 }
 
@@ -706,7 +731,7 @@ form {
   font-size: 22px;
   font-weight: bold;
   color: #474747;
-  text-indent: 4px;
+  text-indent: 0px;
 }
 #main-content h2:before {
   padding-right: 0.3em;
@@ -721,7 +746,7 @@ form {
   font-size: 18px;
   font-weight: bold;
   color: #474747;
-  text-indent: 3px;
+  text-indent: 0px;
 }
 
 #main-content h3:before {
@@ -736,7 +761,7 @@ form {
   font-size: 15px;
   font-weight: bold;
   color: #474747;
-  text-indent: 3px;
+  text-indent: 0px;
 }
 
 h4:before {
@@ -750,7 +775,7 @@ h4:before {
   font-family: 'Besley', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 14px;
   color: #474747;
-  text-indent: 3px;
+  text-indent: 0px;
 }
 h5:before {
   padding-right: 0.3em;
@@ -763,7 +788,7 @@ h5:before {
   font-family: 'Besley', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: .8em;
   color: #474747;
-  text-indent: 3px;
+  text-indent: 0px;
 }
 h6:before {
   padding-right: 0.3em;
@@ -772,15 +797,17 @@ h6:before {
 }
 
 p {
-  font-family: 'Poppins', Arial, serif;
+  font-family: 'Lato', 'Poppins', Arial, serif;
   margin-bottom: 20px;
 }
 
 a {
+  font-family: 'Lato', 'Poppins', Arial, serif;
   text-decoration: none;
 }
 
 p a {
+  font-family: 'Lato', 'Poppins', Arial, serif;
   font-weight: 400;
 }
 
@@ -792,12 +819,14 @@ blockquote {
 }
 
 ul {
+  font-family: 'Lato', 'Poppins', Arial, serif;
   list-style-position: inside;
   list-style: disc;
   padding-left: 20px;
 }
 
 ol {
+  font-family: 'Lato', 'Poppins', Arial, serif;
   list-style-position: inside;
   list-style: decimal;
   padding-left: 3px;
@@ -810,12 +839,23 @@ dl dd {
 
 footer {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   margin-top: 40px;
   margin-bottom: 0;
-  font-size: 25px;
-  background-color: white;
+  font-size: 15px;
+  background-color: #383636;
   text-align: center;
+  font-family: 'Besley';
+  margin: 0px;
+  color: white;
+}
+#copyright {
+  background-color: #383636;
+  margin-bottom: 0;
+  padding: 30px;
+}
+#footerImg {
+  margin-right: 10px;
 }
 
 footer a {
@@ -941,22 +981,11 @@ footer a:hover {
     background-image: none;
     border-top: solid 1px #ddd;
   }
-  aside#sidebar a.button {
-    display: none;
-  }
-  #main-content h1:before,
-  #main-content h2:before,
-  #main-content h3:before,
-  #main-content h4:before,
-  #main-content h5:before,
-  #main-content h6:before {
-    padding-right: 0;
-    margin-left: 0;
-    content: none;
-  }
 }
 
-
+#googlePlay {
+  margin-right: 5px;
+}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) { }
