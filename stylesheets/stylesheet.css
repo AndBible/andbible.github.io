@@ -471,7 +471,10 @@ header h1 {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  header {
+    padding-bottom: 25px;
+  }
   #header-bible {
     display: inline;
     float: right;
@@ -480,9 +483,15 @@ header h1 {
   .local-links {
     font-size: 5px;
   }
+  header h1 {
+    font-size: 35px;
+  }
+  header h2 {
+    font-size: 15px;
+  }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   #header-bible {
     display: inline;
     float: right;
@@ -556,6 +565,12 @@ header h2 {
 .sshot-landscape {
   width: 100%;
 }
+.sshot-colors {
+  display: inline;
+  width: 100px;
+  height: 200px;
+  width: 20%;
+}
 
 iframe.youtube {
   position:absolute;
@@ -628,6 +643,12 @@ aside a.button {
   background-color:  #ee9724 ;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 2.5px 5px #888888;
+}
+.button:hover {
+  background-color: #be720e;
+}
+#dwnld:hover {
+  background-color: #389207;
 }
 #dwnld {
   background-color:  #53d60a;
@@ -726,7 +747,7 @@ form {
 }
 
 #main-content h2 {
-  margin-bottom: 8px;
+  margin-bottom: 0;
   font-family: 'Besley', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: bold;
@@ -799,6 +820,12 @@ h6:before {
 p {
   font-family: 'Lato', 'Poppins', Arial, serif;
   margin-bottom: 20px;
+}
+#newVersion {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-family: "Poppins", "Lato", Arial, serif;
+  font-size: 17.5px;
 }
 
 a {
@@ -986,6 +1013,46 @@ footer a:hover {
 #googlePlay {
   margin-right: 5px;
 }
+.section {
+  margin-top:0;
+}
+section#counter-stats {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.stats .fa {
+  color: #008080;
+  font-size: 60px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  width: 20%;
+}
+
+/*/ end count stats /*/
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) { }
