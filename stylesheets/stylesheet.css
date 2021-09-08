@@ -502,7 +502,17 @@ header h1 {
     height: 125px;
   }
 }
-
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+  #header-bible {
+    display: inline;
+    float: right;
+    position: relative;
+    bottom: 4vh;
+    right: 4vh;
+    width: 125px;
+    height: 125px;
+  }
+}
 header h2 {
   font-family: 'Besley', 'Helvetica Neue', Helvetica, Arial, serif;
   width: 540px;
