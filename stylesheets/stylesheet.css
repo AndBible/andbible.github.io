@@ -1044,6 +1044,53 @@ section#counter-stats {
   color: #008080;
   font-size: 60px;
 }
+.counting {
+  display: block;
+}
+.plusOne {
+  display: inline;
+  float: right;
+  position: relative;
+  top: -50px;
+  right: 10px;
+}
+.plusTwo {
+  display: inline;
+  float: right;
+  position: relative;
+  top: -50px;
+  right: 20px;
+}
+.plusThree {
+  display: inline;
+  float: right;
+  position: relative;
+  top: -50px;
+  right: -10px;
+}
+@media only screen and (max-width: 1100px) { 
+  .plusOne {
+    display: inline;
+    float: right;
+    position: relative;
+    top: -50px;
+    right: 130px;
+  }
+  .plusTwo {
+    display: inline;
+    float: right;
+    position: relative;
+    top: -50px;
+    right: 140px;
+  }
+  .plusThree {
+    display: inline;
+    float: right;
+    position: relative;
+    top: -50px;
+    right: 100px;
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
