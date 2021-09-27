@@ -431,7 +431,7 @@ body {
   font-family: 'Poppins', Helvetica, Arial, serif;
   font-size: 15px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #666;
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
 }
@@ -463,15 +463,51 @@ header h1 {
   width: 540px;
   margin-top: 0;
   margin-bottom: 0.2em;
-  font-size: 72px;
+  font-size: 60px;
   font-weight: normal;
   line-height: 1;
   color: #fff;
   letter-spacing: -1px;
   text-align: center;
 }
-
-@media only screen and (max-width: 800px) {
+#header-credits {
+  font-family: 'Besley', 'Helvetica Neue', Helvetica, Arial, serif;
+  width: 540px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 0.7;
+  color: #e2a90c;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 300px) {
+  header {
+    padding-bottom: 25px;
+  }
+  #header-bible {
+    display: inline;
+    float: right;
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  .local-links {
+    font-size: 5px;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+  #header-info {
+    font-size: 7.5px;
+  }
+  #header-credits {
+    font-size: 6px;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 800px) {
   header {
     padding-bottom: 25px;
   }
@@ -488,6 +524,9 @@ header h1 {
   }
   header h2 {
     font-size: 15px;
+  }
+  .local-links {
+    font-size: 12.5px;
   }
 }
 
@@ -536,12 +575,12 @@ header h2 {
   margin-left: 35px;
   margin-right: 35px;
   margin-top: 0;
-  font-size: 20px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.20em;
   text-align: center;
   background-color: #8b4307;
-  color: black;
+  color: white;
   padding: 12px;
   border-radius: 0 0  10px 10px;
 }
@@ -551,7 +590,6 @@ header h2 {
 .local-links a:hover {
   color: black;
   text-decoration: underline;
-  font-size: 21px;
 }
 
 #content-wrapper {
@@ -593,6 +631,7 @@ iframe.youtube {
 div.youtube {
   position:relative;
   padding-top:56.25%;
+  margin: 20px;
 }
 @media only screen and (max-width: 850px) {
   aside {
@@ -979,9 +1018,6 @@ footer a:hover {
   header h1, header h2 {
     width: 100%;
   }
-  header h1 {
-    font-size: 48px;
-  }
   header h2 {
     font-size: 24px;
   }
@@ -1091,6 +1127,7 @@ section#counter-stats {
     right: 100px;
   }
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;

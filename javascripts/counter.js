@@ -1,6 +1,6 @@
 // number count for stats, using jQuery animate
 
-$('.counting').each(function() {
+$('.counting').each(function(countStats) {
   var $this = $(this),
       countTo = $this.attr('data-count');
   
@@ -24,3 +24,4 @@ $('.counting').each(function() {
   
 
 });
+
