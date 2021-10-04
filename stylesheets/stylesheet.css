@@ -513,6 +513,9 @@ header h1 {
   .aboutAnd {
     font-size: 15px;
   }
+  q {
+    line-height: normal;
+  }
 }
 @media only screen and (min-width: 500px) and (max-width: 700px) {
   header {
@@ -540,6 +543,9 @@ header h1 {
   }
   .local-links {
     font-size: 12.5px;
+  }
+  q {
+    line-height: normal;
   }
 }
 
@@ -1200,12 +1206,13 @@ section#counter-stats {
 
 /* Modal Content */
 .modal-content {
-  position: relative;
+  position: absolute;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
   width: 90%;
   max-width: 1200px;
+  text-align: center;
 }
 
 /* The Close Button */
@@ -1228,6 +1235,12 @@ section#counter-stats {
 .mySlides {
   display: none;
 }
+.mySlides img {
+  position: relative;
+  left: 20px;
+  float: center;
+  margin: auto;
+}
 
 .cursor {
   cursor: pointer;
@@ -1242,7 +1255,7 @@ section#counter-stats {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -1266,10 +1279,11 @@ section#counter-stats {
 /* Number text (1/3 etc) */
 .numbertext {
   color: black;
-  font-size: 12px;
+  font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  z-index: 3;
 }
 
 img {
@@ -1278,20 +1292,21 @@ img {
 @media only screen and (max-width: 500px) {
   .mySlides img {
     height: 500px;
-    width: 200px;
+    width: 320px;
   }
   .column img {
     width: 150px;
-    height: 250px;
+    height: 150px;
   }
 
  }
  @media only screen and (min-width: 700px) {
   .mySlides img {
     float: center;
-    height: 700px;
+    height: 650px;
     width: 500px;
   }
+
  }
 
 
@@ -1336,78 +1351,17 @@ img.hover-shadow {
 /*/ end count stats /*/
 
 
- /* Slideshow container */
- .slideshow-container {
-  position: relative;
-  background: #f1f1f1f1;
-  border-radius:  0 3px 3px 0;
-}
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
-  border-radius:  0 3px 3px 0;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-  text-align: center;
-  padding: 20px;
-  background: #ddd;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 /* Add an italic font style to all quotes */
-q {font-style: italic;}
+q {
+  font-style: italic;
+  font-size: 12.5px;
+}
+#tablet {
+  width: 450px;
+}
 
-/* Add a blue color to the author */
-.author {color: cornflowerblue;} 
+
 
  
 
