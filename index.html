@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
 
     <!--[if lt IE 9]>
@@ -61,11 +61,11 @@
   <a href="#get-help">Contact</a>	|
   <a href="#get-involved">Get Involved</a>
 </nav>
-
+<section class="main-body">
 <div id="content-wrapper">
  <div class="inner clearfix">
   <section id="main-content">
-   <h2>
+   <h2 class="aboutAnd">
     <a id="study-the-bible-on-your-android-mobile-or-tablet" style="text-align: center;" class="anchor" href="#study-the-bible-on-your-android-mobile-or-tablet" aria-hidden="true"><span class="octicon octicon-link"></span></a>
     Study the Bible on Your Android Mobile, Tablet, Chromebook, or Kindle
    </h2>
@@ -76,25 +76,25 @@
 
 			<div class="col-lg-3 stats">
 				<i class="fas fa-bible" aria-hidden="true"></i>
-				<div class="counting" data-count="1800">0</div><span class="plusOne">+</span>
+				<div id="bibles" class="counting" data-count="1800">0</div>
 				<h5>Bibles and documents available</h5>
 			</div>
 
 			<div class="col-lg-3 stats">
 				<i class="fas fa-language" aria-hidden="true"></i>
-				<div class="counting" data-count="700">0</div><span class="plusTwo">+</span>
+				<div id="langs" class="counting" data-count="700">0</div>
 				<h5>Module languages</h5>
 			</div>
 
 			<div class="col-lg-3 stats">
 				<i class="fas fa-users" aria-hidden="true"></i>
-				<div class="counting" data-count="150000">0</div><span class="plusThree">+</span>
+				<div id="users" class="counting" data-count="150000">0</div>
 				<h5>Users worldwide</h5>
 			</div>
 
 			<div class="col-lg-3 stats">
 				<i class="fas fa-mobile-alt" aria-hidden="true"></i>
-				<div class="counting" data-count="1">0</div>
+				<div id="app" class="counting" data-count="1">0</div>
 				<h5>Amazing Bible app</h5>
 			</div>
 
@@ -105,10 +105,46 @@
 	<!-- end container -->
 
 </section>
-<div class="youtube" style="border-radius: 10px; overflow: hidden;">
+
+<div class="youtube" style="border-radius: 10px; overflow: hidden; box-shadow: 5px 5px #be720e;">
   <iframe class="youtube" src="https://www.youtube.com/embed/xf7m4rSuxGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
   </iframe>
   </div>
+   
+
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <q>The 'Bible Study App' (And Bible) for Android is so good that when I'm studying the Bible and I use desktop software I often find myself going back to my Android device because of ease of use and the many features that it has. It helps me to easily organize my thoughts with labels and study pads. The best Bible app for mobile and tablets, bar none!</q>
+    <p class="author">- T.B., avid AndBible user</p>
+  </div>
+
+  <div class="mySlides">
+    <q>And Bible is the main reason I stay on Android. There's nothing else that provides this breadth and depth of resources. The fact that I'm carrying a complete Biblical Studies bookshelf in my pocket is truly amazing. All this for free? Miraculous!</q>
+    <p class="author">- K.P., avid AndBible user</p>
+  </div>
+
+  <div class="mySlides">
+    <q>I am a bible scholar, I am in the word for hours each day. I have tried every bible app on the planet and this is by far the best and easiest to use. The only reason I do not give it 5 stars is because you cannot remove an item from it without uninstalling and installing it again. If I don't like a commentary I've downloaded I have to uninstall the app and start all over.</q>
+    <p class="author">- S.B., avid AndBible user</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+
+
 
 <!-- end cont stats -->
 
@@ -194,22 +230,151 @@
    </h2>
 
    <p>
-    <h3><i class="fas fa-palette"></i> Colors</h3>
+
+    <h3 id="img-h3"><i class="fas fa-palette"></i> Colors</h3>
     <div class="row">
-  <div class="column">
+  <div class="column" id="lgScreen">
     <img src="images/Screenshot_2021-07-31-23-50-25-951_net.bible.android.activity.jpg">
     <img src="images/Screenshot_2021-07-31-23-50-39-603_net.bible.android.activity.jpg">
     <img src="images/Screenshot_2021-07-31-23-50-49-975_net.bible.android.activity.jpg">
   </div>
-    <h3><i class="fas fa-font"></i> Fonts</h3>
-    <div class="column">
+<div id="smScreen">
+ <h3><i class="fas fa-palette"></i> Colors</h3>
+ <h6>Click an image to view it in a larger format</h6>
+
+<div class="row">
+  <div class="column">
+    <img src="images/Screenshot_2021-07-31-23-50-25-951_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Screenshot_2021-07-31-23-50-39-603_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Screenshot_2021-07-31-23-50-49-975_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 15</div>
+      <img src="images/Screenshot_2021-07-31-23-50-25-951_net.bible.android.activity.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 15</div>
+      <img src="images/Screenshot_2021-07-31-23-50-39-603_net.bible.android.activity.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 15</div>
+      <img src="images/Screenshot_2021-07-31-23-50-49-975_net.bible.android.activity.jpg">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">4 / 15</div>
+      <img src="images/Screenshot_2021-07-31-23-50-06-124_net.bible.android.activity.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 15</div>
+      <img src="images/Screenshot_2021-07-31-23-52-41-167_net.bible.android.activity.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 15</div>
+      <img src="images/Screenshot_2021-07-31-23-52-56-247_net.bible.android.activity.jpg">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">7 / 15</div>
+      <img src="images/Screenshot_2021-07-31-23-53-02-488_net.bible.android.activity.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 15</div>
+      <img src="images/Screenshot_2021-08-04-19-46-21-287_net.bible.android.activity.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 15</div>
+      <img src="images/Screenshot_2021-08-04-19-48-20-786_net.bible.android.activity.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 15</div>
+      <img src="images/Screenshot_2021-08-04-19-49-38-753_net.bible.android.activity.jpg">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">11 / 15</div>
+      <img src="images/Screenshot_2021-08-04-19-51-49-538_net.bible.android.activity.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 15</div>
+      <img src="images/highlighting.jpg">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 15</div>
+      <img src="images/labels.png">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 15</div>
+      <img src="images/languages.png">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 15</div>
+      <img src="images/documents.png">
+    </div>
+    
+
+
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+</div>
+
+    <h3 id="img-h3"><i class="fas fa-font"></i> Fonts</h3>
+            <div class="column" id="lgScreen">
     <img src="images/Screenshot_2021-07-31-23-50-06-124_net.bible.android.activity.jpg">
     <img src="images/Screenshot_2021-07-31-23-52-41-167_net.bible.android.activity.jpg">
     <img src="images/Screenshot_2021-07-31-23-52-56-247_net.bible.android.activity.jpg">
     <img src="images/Screenshot_2021-07-31-23-53-02-488_net.bible.android.activity.jpg">
-  </div>
-  <h3><i class="fas fa-map-marked-alt"></i> Maps</h3>
+        </div>
+<div id="smScreen">
+ <h3><i class="fas fa-font"></i> Fonts</h3>
+ <h6>Click an image to view it in a larger format</h6>
+
+<div class="row">
   <div class="column">
+    <img src="images/Screenshot_2021-07-31-23-50-06-124_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Screenshot_2021-07-31-23-52-41-167_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Screenshot_2021-07-31-23-52-56-247_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Screenshot_2021-07-31-23-53-02-488_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+</div>
+</div>
+
+
+  <h3 id="img-h3"><i class="fas fa-map-marked-alt"></i> Maps</h3>
+  <div class="column" id="lgScreen">
     <img src="images/Screenshot_2021-08-04-19-46-21-287_net.bible.android.activity.jpg">
     <img src="images/Screenshot_2021-08-04-19-48-20-786_net.bible.android.activity.jpg">
     <img src="images/Screenshot_2021-08-04-19-49-38-753_net.bible.android.activity.jpg">
@@ -217,8 +382,53 @@
   </div>
 
 
+<div id="smScreen">
+ <h3><i class="fas fa-map-marked-alt"></i> Maps</h3>
+ <h6>Click an image to view it in a larger format</h6>
 
+<div class="row">
+  <div class="column">
+    <img src="images/Screenshot_2021-08-04-19-46-21-287_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Screenshot_2021-08-04-19-48-20-786_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Screenshot_2021-08-04-19-49-38-753_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/Screenshot_2021-08-04-19-51-49-538_net.bible.android.activity.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+  </div>
+</div>
+</div>
 
+  <h3 id="img-h3">Miscellaneous</h3>
+  <div class="column" id="lgScreen">
+    <img src="images/highlighting.jpg">
+    <img src="images/labels.png">
+    <img src="images/languages.png">
+    <img src="images/documents.png">
+  </div>
+
+  <div id="smScreen">
+ <h3>Miscellaneous</h3>
+ <h6>Click an image to view it in a larger format</h6>
+
+<div class="row">
+  <div class="column">
+    <img src="images/highlighting.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/labels.png" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/languages.png" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/documents.png" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+  </div>
+</div>
+</div>
 
 
     </p>
@@ -348,7 +558,7 @@
 
   </aside>
  </div>
-
+</section>
 <footer>
   <!-- Grid container -->
   <div class="container p-4 pb-0">
@@ -467,6 +677,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="jquery-3.3.1.js"></script>
  <script src="javascripts/counter.js" type="text/javascript"></script>
+ <script src="javascripts/lightbox.js" type="text/javascript"></script>
+ <script src="javascripts/testimony.js" type="text/javascript"></script>
 
 </body>
 </html>

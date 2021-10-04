@@ -482,7 +482,7 @@ header h1 {
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
   header {
     padding-bottom: 25px;
   }
@@ -490,24 +490,31 @@ header h1 {
     display: inline;
     float: right;
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
+    bottom: 20px;
+    right: 7.5px;
   }
   .local-links {
     font-size: 5px;
   }
   header h1 {
-    font-size: 18px;
-  }
-  #header-info {
-    font-size: 7.5px;
-  }
-  #header-credits {
-    font-size: 6px;
+    font-size: 32.5px;
     text-align: left;
   }
+  #header-info {
+    font-size: 8px;
+    text-align: left;
+  }
+  #header-credits {
+    font-size: 8px;
+    text-align: left;
+  }
+  .aboutAnd {
+    font-size: 15px;
+  }
 }
-@media only screen and (min-width: 450px) and (max-width: 800px) {
+@media only screen and (min-width: 500px) and (max-width: 700px) {
   header {
     padding-bottom: 25px;
   }
@@ -515,6 +522,12 @@ header h1 {
     display: inline;
     float: right;
     position: relative;
+    width: 75px;
+    height: 75px;
+    bottom: 40px;
+  }
+  #header-info {
+    font-size: 15px;
   }
   .local-links {
     font-size: 5px;
@@ -546,10 +559,22 @@ header h1 {
     display: inline;
     float: right;
     position: relative;
-    bottom: 4vh;
-    right: 4vh;
-    width: 125px;
-    height: 125px;
+    bottom: 50px;
+    right: 150px;
+    width: 80px;
+    height: 80px;
+  }
+  header h1 {
+    font-size: 32.5px;
+    text-align: left;
+  }
+  #header-info {
+    font-size: 12px;
+    text-align: left;
+  }
+  #header-credits {
+    font-size: 10px;
+    text-align: left;
   }
 }
 header h2 {
@@ -802,6 +827,7 @@ form {
   font-weight: bold;
   color: #474747;
   text-indent: 0px;
+  text-align: center;
 }
 #main-content h2:before {
   padding-right: 0.3em;
@@ -977,6 +1003,27 @@ footer a:hover {
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+  #header-bible {
+    display: inline;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    right: 150px;
+    width: 120px;
+    height: 120px;
+  }
+  header h1 {
+    font-size: 32.5px;
+    text-align: left;
+  }
+  #header-info {
+    font-size: 12px;
+    text-align: left;
+  }
+  #header-credits {
+    font-size: 10px;
+    text-align: left;
+  }
   .inner {
     width: 740px;
   }
@@ -1001,6 +1048,9 @@ footer a:hover {
     padding-right: 0;
     margin-left: 0;
     content: none;
+  }
+  .main-content {
+    margin-left: 200px;
   }
 }
 
@@ -1083,50 +1133,7 @@ section#counter-stats {
 .counting {
   display: block;
 }
-.plusOne {
-  display: inline;
-  float: right;
-  position: relative;
-  top: -50px;
-  right: 10px;
-}
-.plusTwo {
-  display: inline;
-  float: right;
-  position: relative;
-  top: -50px;
-  right: 20px;
-}
-.plusThree {
-  display: inline;
-  float: right;
-  position: relative;
-  top: -50px;
-  right: -10px;
-}
-@media only screen and (max-width: 1100px) { 
-  .plusOne {
-    display: inline;
-    float: right;
-    position: relative;
-    top: -50px;
-    right: 130px;
-  }
-  .plusTwo {
-    display: inline;
-    float: right;
-    position: relative;
-    top: -50px;
-    right: 140px;
-  }
-  .plusThree {
-    display: inline;
-    float: right;
-    position: relative;
-    top: -50px;
-    right: 100px;
-  }
-}
+
 
 .row {
   display: flex;
@@ -1146,7 +1153,264 @@ section#counter-stats {
   width: 20%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+.column img {
+  width: 150px;
+  height: 350px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+@media only screen and (min-width: 700px) {
+  .mySlides img {
+    height: 700px;
+    width: 500px;
+    text-align: center;
+
+  }
+ }
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+@media only screen and (max-width: 500px) {
+  .mySlides img {
+    height: 500px;
+    width: 200px;
+  }
+  .column img {
+    width: 150px;
+    height: 250px;
+  }
+
+ }
+ @media only screen and (min-width: 700px) {
+  .mySlides img {
+    float: center;
+    height: 700px;
+    width: 500px;
+  }
+ }
+
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 850px) {
+   #lgScreen {
+    display: none;
+  }
+  #img-h3 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 850px) {
+  #smScreen {
+    display: none;
+  }
+}
+
 /*/ end count stats /*/
+
+
+ /* Slideshow container */
+ .slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  border-radius:  0 3px 3px 0;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  border-radius:  0 3px 3px 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;} 
+
+ 
+
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) { }
