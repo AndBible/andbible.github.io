@@ -490,10 +490,10 @@ header h1 {
     display: inline;
     float: right;
     position: relative;
-    width: 35px;
-    height: 35px;
-    bottom: 20px;
-    right: 7.5px;
+    width: 42px;
+    height: 42px;
+    bottom: 30px;
+    right: 0px;
   }
   .local-links {
     font-size: 5px;
@@ -546,6 +546,14 @@ header h1 {
   }
   q {
     line-height: normal;
+  }
+  .mySlides img {
+    height: 500px;
+    width: 320px;
+  }
+  .column img {
+    width: 150px;
+    height: 200px;
   }
 }
 
@@ -732,6 +740,7 @@ aside a.button {
 }
 #dwnld {
   background-color:  #53d60a;
+  font-size: 8.5px;
 }
 .sidebarIcons {
   display: inline;
@@ -1177,10 +1186,7 @@ section#counter-stats {
   float: left;
   width: 25%;
 }
-.column img {
-  width: 150px;
-  height: 350px;
-}
+
 
 /* The Modal (background) */
 .modal {
