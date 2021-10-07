@@ -516,6 +516,7 @@ header h1 {
     line-height: normal;
   }
 }
+
 @media only screen and (min-width: 500px) and (max-width: 700px) {
   header {
     padding-bottom: 25px;
@@ -1309,6 +1310,20 @@ img {
   }
 
  }
+ @media only screen and (max-width: 375px) {
+  #header-bible {
+    display: inline;
+    float: right;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    bottom: 0px;
+    right: 0px;
+  }
+  .column img {
+    height: 110px;
+  }
+}
  @media only screen and (min-width: 700px) {
   .mySlides img {
     float: center;
