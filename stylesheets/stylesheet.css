@@ -1194,7 +1194,10 @@ section#counter-stats {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
   left: 0;
   top: 0;
   width: 100%;
@@ -1244,7 +1247,6 @@ section#counter-stats {
 }
 .mySlides img {
   position: relative;
-  left: 20px;
   float: center;
   margin: auto;
 }
@@ -1266,7 +1268,7 @@ section#counter-stats {
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px 3px 3px 3px;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -1274,7 +1276,7 @@ section#counter-stats {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 3px 3px 3px 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
