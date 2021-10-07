@@ -452,15 +452,13 @@ header {
   padding-bottom: 40px;
   font-family: 'Besley', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #383636;
-  border-bottom: solid 1px #0d0d0e;
-  border-radius: 0 0 10px 10px;
   text-align: center;
   position: relative;
 }
 
 header h1 {
   font-family: 'Besley', 'Helvetica Neue', Helvetica, Arial, serif;
-  width: 540px;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0.2em;
   font-size: 60px;
@@ -472,7 +470,7 @@ header h1 {
 }
 #header-credits {
   font-family: 'Besley', 'Helvetica Neue', Helvetica, Arial, serif;
-  width: 540px;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 12px;
@@ -481,6 +479,7 @@ header h1 {
   color: #e2a90c;
   letter-spacing: 0.25em;
   text-transform: uppercase;
+  text-align: center;
 }
 @media only screen and (max-width: 500px) {
   header {
@@ -500,15 +499,15 @@ header h1 {
   }
   header h1 {
     font-size: 32.5px;
-    text-align: left;
+    text-align: center;
   }
   #header-info {
-    font-size: 8px;
-    text-align: left;
+    font-size: 11px;
+    text-align: center;
   }
   #header-credits {
     font-size: 8px;
-    text-align: left;
+    text-align: center;
   }
   .aboutAnd {
     font-size: 15px;
@@ -563,9 +562,9 @@ header h1 {
     float: right;
     position: relative;
     bottom: 9vh;
-    right: 15vh;
-    width: 125px;
-    height: 125px;
+    right: 2.5vh;
+    width: 85px;
+    height: 85px;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 800px) {
@@ -574,26 +573,26 @@ header h1 {
     float: right;
     position: relative;
     bottom: 50px;
-    right: 150px;
+    right: 75px;
     width: 80px;
     height: 80px;
   }
   header h1 {
     font-size: 32.5px;
-    text-align: left;
+    text-align: center;
   }
   #header-info {
     font-size: 12px;
-    text-align: left;
+    text-align: center;
   }
   #header-credits {
     font-size: 10px;
-    text-align: left;
+    text-align: center;
   }
 }
 header h2 {
   font-family: 'Besley', 'Helvetica Neue', Helvetica, Arial, serif;
-  width: 540px;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 26px;
@@ -611,8 +610,6 @@ header h2 {
 }
 
 .local-links {
-  margin-left: 35px;
-  margin-right: 35px;
   margin-top: 0;
   font-size: 10px;
   text-transform: uppercase;
@@ -622,6 +619,7 @@ header h2 {
   color: white;
   padding: 12px;
   border-radius: 0 0  10px 10px;
+  width: 100%;
 }
 .local-links a {
   color: white;
@@ -910,6 +908,7 @@ h6:before {
 p {
   font-family: 'Lato', 'Poppins', Arial, serif;
   margin-bottom: 20px;
+  padding-left: 20px;
 }
 #newVersion {
   margin-bottom: 0;
@@ -939,9 +938,17 @@ ul {
   font-family: 'Lato', 'Poppins', Arial, serif;
   list-style-position: inside;
   list-style: disc;
+  padding-left: 40px;
+}
+.help-ul {
+  padding-left: 40px;
+}
+.help-section{
   padding-left: 20px;
 }
-
+.install-section {
+  padding-left: 20px;
+}
 ol {
   font-family: 'Lato', 'Poppins', Arial, serif;
   list-style-position: inside;
@@ -1019,31 +1026,28 @@ footer a:hover {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   #header-bible {
-    display: inline;
-    float: right;
-    position: relative;
-    bottom: 100px;
-    right: 150px;
-    width: 120px;
-    height: 120px;
+    bottom: 70px;
+    right: 15px;
+    width: 75px;
+    height: 75px;
   }
   header h1 {
     font-size: 32.5px;
-    text-align: left;
+    text-align: center;
   }
   #header-info {
-    font-size: 12px;
-    text-align: left;
+    font-size: 13px;
+    text-align: center;
   }
   #header-credits {
     font-size: 10px;
-    text-align: left;
+    text-align: center;
   }
   .inner {
-    width: 740px;
+    width: 90%;
   }
   header h1, header h2 {
-    width: 340px;
+    width: 100%;
   }
   header h1 {
     font-size: 60px;
@@ -1052,7 +1056,7 @@ footer a:hover {
     font-size: 30px;
   }
   #main-content {
-    width: 490px;
+    width: 90%;
   }
   #main-content h1:before,
   #main-content h2:before,
@@ -1061,11 +1065,11 @@ footer a:hover {
   #main-content h5:before,
   #main-content h6:before {
     padding-right: 0;
-    margin-left: 0;
+    margin-left: 50px;
     content: none;
   }
   .main-content {
-    margin-left: 200px;
+    margin-left: 20%;
   }
 }
 
@@ -1153,14 +1157,13 @@ section#counter-stats {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 100%;
-  padding: 0 4px;
+  padding-left: 20px;
 }
 
 .column img {
@@ -1172,9 +1175,6 @@ section#counter-stats {
   box-sizing: border-box;
 }
 
-.row > .column {
-  padding: 0 8px;
-}
 
 .row:after {
   content: "";
@@ -1185,6 +1185,7 @@ section#counter-stats {
 .column {
   float: left;
   width: 25%;
+  padding-left: 30px;
 }
 
 
