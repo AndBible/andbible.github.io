@@ -33,7 +33,7 @@
 
     var users = $("#users"); //[make sure this is a unique variable name]
      
-    $({someValue: 0}).animate({someValue: 150000}, {
+    $({someValue: 0}).animate({someValue: 60000}, {
         delay: 2000,
         duration: 5000,
         easing:'swing', // can be anything
