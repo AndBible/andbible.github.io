@@ -517,46 +517,6 @@ header h1 {
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 700px) {
-  header {
-    padding-bottom: 25px;
-  }
-  #header-bible {
-    display: inline;
-    float: right;
-    position: relative;
-    width: 75px;
-    height: 75px;
-    bottom: 40px;
-  }
-  #header-info {
-    font-size: 15px;
-  }
-  .local-links {
-    font-size: 5px;
-  }
-  header h1 {
-    font-size: 35px;
-  }
-  header h2 {
-    font-size: 15px;
-  }
-  .local-links {
-    font-size: 12.5px;
-  }
-  q {
-    line-height: normal;
-  }
-  .mySlides img {
-    height: 500px;
-    width: 320px;
-  }
-  .column img {
-    width: 150px;
-    height: 200px;
-  }
-}
-
 @media only screen and (min-width: 800px) {
   #header-bible {
     display: inline;
@@ -1169,7 +1129,7 @@ section#counter-stats {
 
 .column img {
   margin-top: 8px;
-  width: 20%;
+  width: 40%;
 }
 
 * {
@@ -1304,11 +1264,24 @@ img {
     height: 500px;
     width: 320px;
   }
+  .column {
+    flex: 33%;
+    max-width: 33%;
+    padding-left: 5px;
+    }
   .column img {
-    width: 150px;
-    height: 150px;
-  }
-
+    margin-top: 8px;
+    width: 33%;
+    }
+    .column img {
+      height: 175px;
+      width: 33%;
+    }
+    .column {
+      float: left;
+      width: 25%;
+      padding-left: 5px;
+    }
  }
  @media only screen and (max-width: 375px) {
   #header-bible {
@@ -1321,8 +1294,13 @@ img {
     right: 0px;
   }
   .column img {
-    height: 110px;
-  }
+    margin-top: 8px;
+    width: 33%;
+    }
+    .column img {
+      height: 175px;
+      width: 33%;
+    }
 }
  @media only screen and (min-width: 700px) {
   .mySlides img {
@@ -1332,6 +1310,52 @@ img {
   }
 
  }
+ @media only screen and (min-width: 500px) and (max-width: 700px) {
+  header {
+    padding-bottom: 25px;
+  }
+  #header-bible {
+    display: inline;
+    float: right;
+    position: relative;
+    width: 75px;
+    height: 75px;
+    bottom: 40px;
+  }
+  #header-info {
+    font-size: 15px;
+  }
+  .local-links {
+    font-size: 5px;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  header h2 {
+    font-size: 15px;
+  }
+  .local-links {
+    font-size: 12.5px;
+  }
+  q {
+    line-height: normal;
+  }
+  .mySlides img {
+    height: 500px;
+    width: 320px;
+  }
+  .column {
+    flex: 33%;
+    max-width: 33%;
+    padding-left: 5px;
+    }
+  .column img {
+    margin-top: 8px;
+    width: 33%;
+      height: 300px;
+      width: 33%;
+    }
+}
 
 
 .caption-container {
