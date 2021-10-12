@@ -1296,7 +1296,7 @@ img {
   q {
     line-height: normal;
   }
-  
+
 }
 
 
@@ -1324,7 +1324,7 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 849px) {
    #lgScreen {
     display: none;
   }
@@ -1335,6 +1335,11 @@ img.hover-shadow {
 @media only screen and (min-width: 850px) {
   #smScreen {
     display: none;
+  }
+  .column img {
+    margin-top: 8px;
+    width: 20%;
+    padding-left: 15px;
   }
 }
 
