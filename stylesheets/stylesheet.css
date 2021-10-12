@@ -1129,7 +1129,7 @@ section#counter-stats {
 
 .column img {
   margin-top: 8px;
-  width: 40%;
+  width: 20%;
 }
 
 * {
@@ -1166,14 +1166,7 @@ section#counter-stats {
   overflow: auto;
   background-color: black;
 }
-@media only screen and (min-width: 700px) {
-  .mySlides img {
-    height: 700px;
-    width: 500px;
-    text-align: center;
 
-  }
- }
 
 /* Modal Content */
 .modal-content {
@@ -1259,30 +1252,6 @@ section#counter-stats {
 img {
   margin-bottom: -4px;
 }
-@media only screen and (max-width: 500px) {
-  .mySlides img {
-    height: 500px;
-    width: 320px;
-  }
-  .column {
-    flex: 33%;
-    max-width: 33%;
-    padding-left: 5px;
-    }
-  .column img {
-    margin-top: 8px;
-    width: 33%;
-    }
-    .column img {
-      height: 175px;
-      width: 33%;
-    }
-    .column {
-      float: left;
-      width: 25%;
-      padding-left: 5px;
-    }
- }
  @media only screen and (max-width: 375px) {
   #header-bible {
     display: inline;
@@ -1293,21 +1262,8 @@ img {
     bottom: 0px;
     right: 0px;
   }
-  .column img {
-    margin-top: 8px;
-    width: 33%;
-    }
-    .column img {
-      height: 175px;
-      width: 33%;
-    }
 }
  @media only screen and (min-width: 700px) {
-  .mySlides img {
-    float: center;
-    height: 650px;
-    width: 500px;
-  }
 
  }
  @media only screen and (min-width: 500px) and (max-width: 700px) {
@@ -1340,21 +1296,7 @@ img {
   q {
     line-height: normal;
   }
-  .mySlides img {
-    height: 500px;
-    width: 320px;
-  }
-  .column {
-    flex: 33%;
-    max-width: 33%;
-    padding-left: 5px;
-    }
-  .column img {
-    margin-top: 8px;
-    width: 33%;
-      height: 300px;
-      width: 33%;
-    }
+  
 }
 
 
