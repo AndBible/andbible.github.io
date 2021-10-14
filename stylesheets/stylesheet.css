@@ -517,46 +517,6 @@ header h1 {
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 700px) {
-  header {
-    padding-bottom: 25px;
-  }
-  #header-bible {
-    display: inline;
-    float: right;
-    position: relative;
-    width: 75px;
-    height: 75px;
-    bottom: 40px;
-  }
-  #header-info {
-    font-size: 15px;
-  }
-  .local-links {
-    font-size: 5px;
-  }
-  header h1 {
-    font-size: 35px;
-  }
-  header h2 {
-    font-size: 15px;
-  }
-  .local-links {
-    font-size: 12.5px;
-  }
-  q {
-    line-height: normal;
-  }
-  .mySlides img {
-    height: 500px;
-    width: 320px;
-  }
-  .column img {
-    width: 150px;
-    height: 200px;
-  }
-}
-
 @media only screen and (min-width: 800px) {
   #header-bible {
     display: inline;
@@ -669,9 +629,9 @@ iframe.youtube {
 div.youtube {
   position:relative;
   padding-top:56.25%;
-  margin: 20px;
+  margin: 5%;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1075px) {
   aside {
     display: none;
   }
@@ -1206,14 +1166,7 @@ section#counter-stats {
   overflow: auto;
   background-color: black;
 }
-@media only screen and (min-width: 700px) {
-  .mySlides img {
-    height: 700px;
-    width: 500px;
-    text-align: center;
 
-  }
- }
 
 /* Modal Content */
 .modal-content {
@@ -1299,17 +1252,6 @@ section#counter-stats {
 img {
   margin-bottom: -4px;
 }
-@media only screen and (max-width: 500px) {
-  .mySlides img {
-    height: 500px;
-    width: 320px;
-  }
-  .column img {
-    width: 150px;
-    height: 150px;
-  }
-
- }
  @media only screen and (max-width: 375px) {
   #header-bible {
     display: inline;
@@ -1320,18 +1262,42 @@ img {
     bottom: 0px;
     right: 0px;
   }
-  .column img {
-    height: 110px;
-  }
 }
  @media only screen and (min-width: 700px) {
-  .mySlides img {
-    float: center;
-    height: 650px;
-    width: 500px;
-  }
 
  }
+ @media only screen and (min-width: 500px) and (max-width: 700px) {
+  header {
+    padding-bottom: 25px;
+  }
+  #header-bible {
+    display: inline;
+    float: right;
+    position: relative;
+    width: 75px;
+    height: 75px;
+    bottom: 40px;
+  }
+  #header-info {
+    font-size: 15px;
+  }
+  .local-links {
+    font-size: 5px;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  header h2 {
+    font-size: 15px;
+  }
+  .local-links {
+    font-size: 12.5px;
+  }
+  q {
+    line-height: normal;
+  }
+
+}
 
 
 .caption-container {
@@ -1358,18 +1324,27 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 849px) {
    #lgScreen {
     display: none;
-  }
-  #img-h3 {
-    display: none;
-  }
+   }
+   #img-h3 {
+     display: none;
+   }
+
 }
 @media only screen and (min-width: 850px) {
-  #smScreen {
+   #smScreen {
     display: none;
+   }
+   .column img {
+    float: left;
+    width: 25%;
+    padding-left: 30px;
+    flex: 25%;
+    max-width: 100%;
   }
+  
 }
 
 /*/ end count stats /*/
