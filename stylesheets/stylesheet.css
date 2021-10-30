@@ -1359,7 +1359,10 @@ q {
 #tablet {
   width: 450px;
 }
-
+.feature-testimonial {
+  border-radius: 4px;
+  border: 1px solid black;
+}
 
 
  
