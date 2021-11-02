@@ -1361,10 +1361,16 @@ q {
 }
 .feature-testimonial {
   border-radius: 4px;
-  border: 1px solid black;
+  border: 1px solid #cccccc;
+  padding: 7.5px;
 }
 .checked {
   color: orange;
+}
+.badge-success {
+  color: black;
+  background-color: #00cc00;
+  margin-bottom: 5px;
 }
 
 
