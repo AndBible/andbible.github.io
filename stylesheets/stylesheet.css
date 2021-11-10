@@ -1372,6 +1372,9 @@ q {
   background-color: #00cc00;
   margin-bottom: 5px;
 }
+#reviewFirst, #reviewSecond, #reviewThird, #reviewFourth, #reviewFifth, #reviewHeading {
+  margin-left: 25px;
+} 
 
 
  
