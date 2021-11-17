@@ -1351,11 +1351,7 @@ img.hover-shadow {
 
 
 
-/* Add an italic font style to all quotes */
-q {
-  font-style: italic;
-  font-size: 12.5px;
-}
+
 #tablet {
   width: 450px;
 }
@@ -1364,17 +1360,7 @@ q {
   border: 1px solid #cccccc;
   padding: 7.5px;
 }
-.checked {
-  color: orange;
-}
-.badge-success {
-  color: black;
-  background-color: #00cc00;
-  margin-bottom: 5px;
-}
-#reviewFirst, #reviewSecond, #reviewThird, #reviewFourth, #reviewFifth, #reviewHeading {
-  margin-left: 25px;
-} 
+
 
 
  
