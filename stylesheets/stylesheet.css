@@ -1351,18 +1351,19 @@ img.hover-shadow {
 
 
 
-/* Add an italic font style to all quotes */
-q {
-  font-style: italic;
-  font-size: 12.5px;
-}
+
 #tablet {
   width: 450px;
 }
 .feature-testimonial {
   border-radius: 4px;
-  border: 1px solid black;
+  border: 1px solid #cccccc;
+  padding: 7.5px;
 }
+.checked {
+  color: orange;
+}
+
 
 
  
