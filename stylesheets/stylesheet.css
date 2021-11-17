@@ -1360,6 +1360,9 @@ img.hover-shadow {
   border: 1px solid #cccccc;
   padding: 7.5px;
 }
+.checked {
+  color: orange;
+}
 
 
 
