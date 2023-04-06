@@ -1,0 +1,20 @@
+[
+{
+"relation": ["delegate_permission/common.handle_all_urls"],
+"target": {
+   "namespace": "android_app",
+   "package_name": "net.bible.android.activity.next",
+   "sha256_cert_fingerprints":
+   ["8B:F5:16:8A:01:94:4D:62:A4:A4:C7:B6:52:F4:73:81:84:00:0D:57:A4:8C:52:89:5A:C6:CB:83:1C:48:CF:30"]
+}
+},{
+"relation": ["delegate_permission/common.handle_all_urls"],
+"target": {
+   "namespace": "android_app",
+   "package_name": "net.bible.android.activity",
+   "sha256_cert_fingerprints":
+   ["8B:F5:16:8A:01:94:4D:62:A4:A4:C7:B6:52:F4:73:81:84:00:0D:57:A4:8C:52:89:5A:C6:CB:83:1C:48:CF:30"]
+}
+}
+]
+
