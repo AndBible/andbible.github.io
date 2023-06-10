@@ -939,6 +939,9 @@ footer {
   margin-bottom: 0;
   padding: 30px;
 }
+#copyright a {
+	color: white;
+}
 #footerImg {
   margin-right: 10px;
 }
